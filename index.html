@@ -214,6 +214,36 @@
       font-size: clamp(1.8rem, 4vw, 3rem);
     }
 
+    .download-title {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .download-title h2 { margin-bottom: 0; }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--uct-blue);
+      color: #fff;
+      font-size: .86rem;
+      font-weight: 850;
+      text-decoration: none;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-1px);
+      background: var(--uct-blue-2);
+      box-shadow: 0 8px 18px rgba(0, 47, 108, .14);
+    }
+
     .section-head p {
       margin: 0;
       color: var(--muted);
@@ -1002,7 +1032,10 @@
 
     <section id="infografia">
       <div class="section-head">
-        <h2>Material descargable de síntesis</h2>
+        <div class="download-title">
+          <h2>Material descargable de síntesis</h2>
+          <a class="download-btn" href="./assets/infografias.zip" download>Descargar imágenes</a>
+        </div>
         <p>Estas láminas resumen la guía para compartirla, imprimirla o usarla como apoyo rápido en clases. La página amplía estos contenidos con ejemplos, citación, toma de decisiones y autoevaluación.</p>
       </div>
       <div class="gallery">
